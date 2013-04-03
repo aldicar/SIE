@@ -1,4 +1,4 @@
-
+ 
 <br> <br>	<h2 class = "letras"><center><?= $title ?></center></h2><br><br>
 
   	  <center><table class="tablas">
@@ -13,7 +13,7 @@
 				<th width="15%">OPCIONES</th>
 			</tr>
 			<? foreach($filas as $fila):?><tr>
-					<?php 	
+					<?php 	 
 					$descripcion = $fila->descripcion_con;
 					$length = 20;
 				    //Primero eliminamos las etiquetas html y luego cortamos el string

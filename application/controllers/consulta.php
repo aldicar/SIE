@@ -131,12 +131,22 @@ class Consulta extends CI_Controller
 
 				$dato['title']= "Lista de Consultas";	
 
-			$dato['filas'] = $this->consulta_model->selec_consultas();	
-			
-				$this->load->view("socios/cabecera",$dato);
-				//$this->load->view("inicio/$menu",$dato);
-				$this->load->view("socios/lista_consultas");
-				$this->load->view("socios/pie");
+				if($dato['filas'] = $this->consulta_model->selec_consultas())
+				{
+
+					$this->load->view("socios/cabecera",$dato);
+					//$this->load->view("inicio/$menu",$dato);
+					$this->load->view("socios/lista_consultas");
+					$this->load->view("socios/pie");
+				}
+				else
+				{
+
+					$this->load->view("socios/cabecera",$dato);
+					//$this->load->view("inicio/$menu",$dato);
+					$this->load->view("socios/no_consultas");
+					$this->load->view("socios/pie");	
+				}	
 			}
 
 		}
