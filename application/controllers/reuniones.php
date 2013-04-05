@@ -80,34 +80,38 @@ class Reuniones extends CI_Controller
 			}
 			else
 			{
-				$id_user = $this->session->userdata('id_user');
+				$id_user = $this->session->userdata('id_user'); 
 				$tipo = $this->input->post ('tipo');
 				$lugar = $this->input->post ('lugar');
 				$fecha = $this->input->post ('fecha');
 				$respuesta = $this->input->post ('respuesta');
 
-				$contenido = ("fecha de reunion: $fecha  <br />  Lugar: $lugar <br />  Descripcion:  $respuesta ") ;
+				$contenido = ("fecha de reunion: $fecha  ---  Lugar: $lugar ------  Descripcion:  $respuesta ") ;
 				
-				$mail = new PHPMailer();
-			        $mail->IsSMTP(); // establecemos que utilizaremos SMTP
-			        $mail->SMTPAuth   = true; // habilitamos la autenticación SMTP
-			        $mail->SMTPSecure = "ssl";  // establecemos el prefijo del protocolo seguro de comunicación con el servidor
-			        $mail->Host       = "smtp.gmail.com";      // establecemos GMail como nuestro servidor SMTP
-			        $mail->Port       = 465;                   // establecemos el puerto SMTP en el servidor de GMail
-			        $mail->Username   = "sieboliva@gmail.com";  // la cuenta de correo GMail
-			        $mail->Password   = "siebolivia2012";            // password de la cuenta GMail
-			        $mail->SetFrom('sieboliva@gmail.com', 'S.I.E. SRL');  //Quien envía el correo
-			        $mail->AddReplyTo("alvarod745@gmail.com","Nombre Apellido");  //A quien debe ir dirigida la respuesta
-			        $mail->Subject    = "NUEVA REUNION";  //Asunto del mensaje
-			        $mail->Body      = "$contenido	";
-			        $mail->AltBody    = "Cuerpo en texto plano";
-			        $destino = "alvarod745@gmail.com";
-			        $mail->AddAddress($destino);
+				$config['protocol'] = 'smtp';
+				$config['smtp_host'] = 'smtp.googlemail.com';
+				$config['smtp_port'] = 587;
+				$config['smtp_user'] = 'sieboliva@gmail.com';
+				$config['smtp_pass'] = 'siebolivia2012';
 
-			      //  $mail->AddAttachment("images/phpmailer.gif");      // añadimos archivos adjuntos si es necesario
-			        //$mail->AddAttachment("images/phpmailer_mini.gif"); // tantos como queramos
+				$this->load->library('email', $config);
+				$this->email->set_newline("\r\n");
 
-			        if(!$mail->Send()) {
+				
+
+				$this->email->from('sieboliva@gmail.com');
+				//$this->email->to('alvarod745@gmail.com,roger.mendez.r@gmail.com, fr2percy@gmail.com,iverherlandth@gmail.com,rafa_rolando@hotmail.com');
+				$this->email->to('alvarod745@gmail.com');
+				//$this->email->subject('Aquí está su información ');
+				$this->email->subject($tipo);
+				//$this->email->message($lugar);
+				$this->email->set_newline("\r\n");
+				$this->email->message($contenido);
+				$this->email->send();
+				
+
+				if ( ! $this->email->send())
+				{
 			        	echo "error no se envio ";
 			            //$data["message"] = "Error en el envío: " . $mail->ErrorInfo;
 			        } else {

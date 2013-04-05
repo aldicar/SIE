@@ -21,7 +21,7 @@
 				             <div id="formulario">
 				              	<?php echo validation_errors('<div class="errors">','</div>'); ?> 
 								<br>
-						        <?=form_open("consulta/registrar_respuesta/$id/id_user" )?><br>
+						        <?=form_open("consulta/registrar_respuesta/$id" )?><br>
 						        
 									<label  class="subtitulos sub1">RESPUESTA :</label><br>
 									<textarea class="label" id="respuesta" name ="respuesta" cols="40" rows="10" aria-required="true"></textarea>

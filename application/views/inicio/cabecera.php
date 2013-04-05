@@ -41,7 +41,7 @@
 					 
 					 <?= form_submit(array('name'=>'guardar', 'value'=>'Entrar', 'class'=>'buttonsend'))?>
 					 <?= form_close()?>
-				</div>
+				</div> 
 				</div>
 				
 			</header> 

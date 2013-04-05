@@ -16,7 +16,7 @@ class Usuarios extends CI_Controller
     	}
 		
 		
-		function index()
+		function index() 
 		{
 				//$dato['consulta'] = $this->horario_model->selec_horario();	
 				$dato['title']= "Ingreso de usuarios";	
