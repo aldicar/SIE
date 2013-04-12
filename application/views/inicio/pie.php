@@ -21,7 +21,7 @@
 			</section>
 			
 			<footer id="pie">
-				<p>Copyright (c) 2013 <a  title="DESARROLLADORES" href="#example" class="openModal">sie</a>Todos los derechos reservados</p>
+				<p id="pieletra">Copyright (c) 2013 <a  title="DESARROLLADORES" href="#example" class="openModal">sie</a></p>
 			</footer>
 			<!--todo referente a la ventana modal-->
 			
