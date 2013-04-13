@@ -79,11 +79,7 @@
 				    <?=anchor('empresas','Lista de empresas')?>
 				    
 				  </li>
-				   <li>
-				    
-				    <?=anchor('empresas','Prueba no mas jejeje')?>
-				    
-				  </li>
+				   
 
 				</ul>
 			
