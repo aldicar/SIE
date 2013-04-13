@@ -171,8 +171,9 @@ textarea:focus{
 
 }
 label.subtitulos.sub1{
-	margin-left: 250px;
+	margin-left: 210px;
 	margin-top: -11px;
+
 	position:absolute;
 }
 .errors{
@@ -220,12 +221,12 @@ label.subtitulos.sub1{
 	margin-top: 1px;	
 }
 .responder1{
-	margin-left: 582px;
+	margin-left: 540px;
 	margin-top: 1px;
 	position: absolute;
 }
 .guardarcontra{
-	margin-left: 521px;
+	margin-left: 494px;
 	margin-top: 2px;
 }
 /*boton guardar nueva empresa*/
@@ -238,10 +239,10 @@ label.subtitulos.sub1{
 	width: 150px;
 	height: 40px;
 	margin-top: 2px;
-	margin-left: 520px;
+	margin-left: 496px;
 }
 .respempre{
-   margin-left: 520px;
+   margin-left: 498px;
    margin-top: 2px;	
 }
 textarea.label{

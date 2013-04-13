@@ -51,7 +51,7 @@
 				
 				<div id="iniciose"><br>
 					<ul class="menu">
-					 <li> <?=anchor("usuarios/salir",'Salir')?>asdsadasd</li><br><br>
+					 <li> <?=anchor("usuarios/salir",'Salir')?></li><br><br>
 				  	 <li > <?=anchor("usuarios/cambio_contra",'Cambio')?></li>
 				  	 </ul>
 				 </div>
@@ -88,3 +88,4 @@
 
 				</section-->
 			</nav>
+
