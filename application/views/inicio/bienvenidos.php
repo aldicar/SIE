@@ -1,7 +1,8 @@
 	<!--TODO ESTO ES EL MENU Y EL CUERPO-->
 	<nav class="menu">
 		<ul class="menu">
-			<li><a href="#" title="tab1">Home</a></li>
+			<li><a href="#" title="tab0">Inicio</a></li>
+			<li><a href="#" title="tab1">Nosotros</a></li>
 			<li><a href="#" title="tab2">Servicios</a></li>
 			<li><a href="#" title="tab3">Temas y Cursos</a></li>
 			<li><a href="#" title="tab4">Contactos</a></li>
@@ -9,6 +10,11 @@
 		<a href="#" id="menuflotante">Menu</a>
 	</nav>
 	<section id="cuerpomenu">
+    	<div id="tab0">
+    		<h5 class="bienvenida">BIENVENIDOS A SIE S.R.L.</h5>
+    		<img class="imagenmenu"></img>
+    		<h5 class="bienvenida">TRABAJAMOS POR UN MEJOR FUTURO TECNOLÓGICO</h5>
+    	</div>
     	<div id="tab1">
             <h3>MISIÓN</h3>
             <p>Es misión de S.I.E. Ofrecer soluciones tecnológicas innovadoras, 
@@ -52,7 +58,7 @@
 			</p>
     	</div>
     	<div id="tab4">
-    		<h3 id="formcontac">ENVIANOS TU CONSULTA</h3>
+    		<h3 id="formcontac" >ENVIANOS TU CONSULTA</h3>
 				<?php echo validation_errors('<div class="errors">','</div>'); ?> <br>
 			
 			    <?=form_open('consulta/registrar_consulta')?>

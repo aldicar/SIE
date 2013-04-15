@@ -39,7 +39,7 @@
 						<div id="logo1" class="logos"></div>
 						<div id="logo2" class="logos"></div>
 						<div id="logo3" class="logos"><p id="letralogo">SIE</p></div>
-						<div id="lema"><h4>Trabajando por un mejor futuro tecnológico</h4></div>
+						<div id="lema">Trabajando por un mejor futuro tecnológico</div>
 					
 				</div>
 			
@@ -50,10 +50,12 @@
 				</div>
 				
 				<div id="iniciose"><br>
-					<ul class="menu">
-					 <li> <?=anchor("usuarios/salir",'Salir')?></li><br><br>
-				  	 <li > <?=anchor("usuarios/cambio_contra",'Cambio')?></li>
-				  	 </ul>
+					<nav class="menu">
+						<ul class="menu">
+					 		<li class="letrasocioini"> <?=anchor("usuarios/salir",'Salir')?></li><br><br>
+				  	 		<li class="letrasocioini" > <?=anchor("usuarios/cambio_contra",'Cambio')?></li>
+				  	 	</ul>
+				  	 </nav>
 				 </div>
 								
 			</header> 

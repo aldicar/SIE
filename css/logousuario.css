@@ -13,7 +13,7 @@ header{
   vertical-align: top;
   float:center;
   margin:0 auto;
-  overflow:hidden;
+  overflow:none;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -68,8 +68,8 @@ position:absolute;
 .nombres{
  
  margin-left:-25px;
- margin-top:2px;
- font-size:25px;
+ margin-top:7px;
+ font-size:23px;
  font-family: sans-serif;
  font-weight:none;
  color:white;
@@ -149,15 +149,16 @@ position:absolute;
   max-width:100%;
 }
  #lema{
- position: absolute;
-    margin:0 auto;
-    margin-top: 22px;
-    color:black;
-    width: 30%;
-    font-weight: bolder;
-    margin-left: -10px;
+    position: absolute;
 
-}
+    color:black;
+    width: 26%;
+    margin-top:22px;
+    margin-left:-8px;
+    font-weight: bolder;
+    padding: 1px;
+
+ }   
 /*ESPACIO PUBLICITARIO O NOTICIAS*/
 #mensaje{
   background:white;
@@ -167,21 +168,22 @@ position:absolute;
   margin-bottom: 10px;
   padding:0px; 
 }
-/*.mensaje:before, .mensaje:after{
+.mensaje:before, .mensaje:after{
     z-index:-1;
-    position: absolute;
-    content: "";
-    bottom:-2.2em;
+    /*position: relative;*/
+    position:absolute;
+    content: "holals como estas";
+    bottom:2.2em;
     margin-right: 2px;
     margin-left: 2px;
     width: 50%;
-    top: 10%;
+    top: 0;
     background: red;
-    -webkit-box-shadow: 0 18px 8px red;
-    -moz-box-shadow: 0 18px 8px red;
-    -o-box-shadow: 0 18px 8px red;
-    -ms-box-shadow: 0 18px 8px red;
-    box-shadow: 0 18px 8px red;
+    -webkit-box-shadow: 0 18px 50px red;
+    -moz-box-shadow: 0 18px 50px red;
+    -o-box-shadow: 0 18px 50px red;
+    -ms-box-shadow: 0 18px 50px red;
+    box-shadow: 0 18px 50px red;
     -webkit-transform: rotate(-3deg);
     -moz-transform: rotate(-3deg);
     -o-transform: rotate(-3deg);
@@ -198,7 +200,7 @@ position:absolute;
     right:22.5%;
     left: auto;
 }
-*/
+
 .imagenes{
   background-position:top left;
   background-size:100% 100%;
@@ -404,7 +406,7 @@ padding: 0;
 }
 
 #passwordmodal{
-  color: white;
+  color:red;
   font-size: 1em;
   font-family: "trebuchet ms",sans-serif;
   font-weight: bolder;
@@ -412,14 +414,25 @@ padding: 0;
   position:relative;
 }
 #passwordmodal:hover{
-  color: red;
+  color:skyblue;
 }
 /*ventana inicio socios*/
-.nav li{
-  color:white;
+/*.nav li{
+  color:red;
   list-style: none;
   font-size: 25px;
 
+}*/
+.letrasocioini{
+  width: 100%;  
+  margin-bottom:10px; 
+  
+  font-size: 22px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box; 
 }
 /*Styles for screen 768px*/
 @media screen and (max-width: 768px) {
