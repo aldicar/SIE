@@ -189,17 +189,7 @@ class Usuarios extends CI_Controller
 			else 
 			{
 				
-				$dato['error'] ="El nombre de usuario o contraseña son incorrectos";	
-				
-
-				$dato['title']= "Pagina de Inicio";	
-				
-			//	$dato['consulta'] = $this->horario_model->selec_horario();	
-			
-				$this->load->view("inicio/cabecera",$dato);
-				//$this->load->view("inicio/$menu",$dato);
-				$this->load->view("inicio/bienvenidos");
-				$this->load->view("inicio/pie");	
+				redirect("inicio/error_uno");
 			}
 		}
 	function salir()
