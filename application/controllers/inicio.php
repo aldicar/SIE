@@ -31,18 +31,116 @@ class Inicio extends CI_Controller
 				
 				$dato['title']= "Pagina de Inicio";	
 				$dato['error'] = "";
-				$dato['error2'] = "";
+			
 				$dato['filas'] = $this->empresas_model->selec_empresas();
 			//	$dato['consulta'] = $this->horario_model->selec_horario();	
 			
 				$this->load->view("inicio/cabecera",$dato);
 				//$this->load->view("inicio/$menu",$dato);
-				$this->load->view("inicio/bienvenidos");
+				$this->load->view("inicio/tab0");
 				$this->load->view("inicio/pie",$dato);
 			
 			
 		}
+		function nosotros()
+		{
+			$dato['title']= "Pagina de Inicio";	
+				$dato['error'] = "";
+			
+				$dato['filas'] = $this->empresas_model->selec_empresas();
+			//	$dato['consulta'] = $this->horario_model->selec_horario();	
+			
+				$this->load->view("inicio/cabecera",$dato);
+				//$this->load->view("inicio/$menu",$dato);
+				$this->load->view("inicio/tab1");
+				$this->load->view("inicio/pie",$dato);
+		}
+		function servicios()
+		{
+			$dato['title']= "Pagina de Inicio";	
+				$dato['error'] = "";
+			
+				$dato['filas'] = $this->empresas_model->selec_empresas();
+			//	$dato['consulta'] = $this->horario_model->selec_horario();	
+			
+				$this->load->view("inicio/cabecera",$dato);
+				//$this->load->view("inicio/$menu",$dato);
+				$this->load->view("inicio/tab2");
+				$this->load->view("inicio/pie",$dato);
+		}
 
+		function temas()
+		{
+			$dato['title']= "Pagina de Inicio";	
+				$dato['error'] = "";
+			
+				$dato['filas'] = $this->empresas_model->selec_empresas();
+			//	$dato['consulta'] = $this->horario_model->selec_horario();	
+			
+				$this->load->view("inicio/cabecera",$dato);
+				//$this->load->view("inicio/$menu",$dato);
+				$this->load->view("inicio/tab3");
+				$this->load->view("inicio/pie",$dato);
+		}
+
+		function contacto()
+		{
+			$dato['title']= "Pagina de Inicio";	
+				$dato['error'] = "";
+				$dato['error2'] = "";
+			
+				$dato['filas'] = $this->empresas_model->selec_empresas();
+			//	$dato['consulta'] = $this->horario_model->selec_horario();	
+			
+				$this->load->view("inicio/cabecera",$dato);
+				//$this->load->view("inicio/$menu",$dato);
+				$this->load->view("inicio/tab4",$dato);
+				$this->load->view("inicio/pie",$dato);
+		}
+
+		function contacto_2()
+		{
+				$dato['title']= "Pagina de Inicio";	
+				$dato['error'] = "";
+				$dato['error2'] = "El el nombre o correo electronico es incorrecto....  ";
+			
+				$dato['filas'] = $this->empresas_model->selec_empresas();
+			//	$dato['consulta'] = $this->horario_model->selec_horario();	
+			
+				$this->load->view("inicio/cabecera",$dato);
+				//$this->load->view("inicio/$menu",$dato);
+				$this->load->view("inicio/tab4",$dato);
+				$this->load->view("inicio/pie",$dato);
+		}		
+
+		function contacto_3()
+		{
+			$dato['title']= "Pagina de Inicio";	
+				$dato['error'] = "";
+				$dato['error2'] = "error no se pudo enviar su consulta ";
+			
+				$dato['filas'] = $this->empresas_model->selec_empresas();
+			//	$dato['consulta'] = $this->horario_model->selec_horario();	
+			
+				$this->load->view("inicio/cabecera",$dato);
+				//$this->load->view("inicio/$menu",$dato);
+				$this->load->view("inicio/tab4",$dato);
+				$this->load->view("inicio/pie",$dato);
+		}
+		function contacto_4()
+		{
+			$dato['title']= "Pagina de Inicio";	
+				$dato['error'] = "";
+				$dato['error2'] = "Su consulta fue envidad exitosamente...!! ";
+			
+				$dato['filas'] = $this->empresas_model->selec_empresas();
+			//	$dato['consulta'] = $this->horario_model->selec_horario();	
+			
+				$this->load->view("inicio/cabecera",$dato);
+				//$this->load->view("inicio/$menu",$dato);
+				$this->load->view("inicio/tab4",$dato);
+				$this->load->view("inicio/pie",$dato);
+		}
 		function error_uno()
 		{
 			$dato['error'] ="El nombre de usuario o contraseña son incorrectos";	
@@ -50,13 +148,13 @@ class Inicio extends CI_Controller
 				
 				$dato['title']= "Pagina de Inicio";	
 			
-				$dato['error2'] = "";
+				
 				$dato['filas'] = $this->empresas_model->selec_empresas();
 			//	$dato['consulta'] = $this->horario_model->selec_horario();	
 			
 				$this->load->view("inicio/cabecera",$dato);
 				//$this->load->view("inicio/$menu",$dato);
-				$this->load->view("inicio/bienvenidos");
+				$this->load->view("inicio/tab0");
 				$this->load->view("inicio/pie",$dato);
 			
 		}

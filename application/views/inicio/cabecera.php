@@ -11,37 +11,7 @@
 		<script scr="js/modernizr.custom.03036.js"></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery-1.9.1.min.js"></script>
-		<script>
-		$(document).ready(function() {
-				var menuflotante 		= $('#menuflotante');
-					menu 		= $('nav ul');
-					menuHeight	= menu.height();
-
-				$(menuflotante).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.removeAttr('style');
-	        		}
-	    		});
-	    	});
-			$(document).ready(function() {
-					$("#cuerpomenu div").hide();
-			        $("#cuerpomenu div:first").fadeIn();
-			 
-			    $('.menu a').click(function(e) {
-			        e.preventDefault();
-			        $("#cuerpomenu div").hide();
-			        $(".menu li").attr("id","");
-			        $('#' + $(this).attr('title')).fadeIn();
-			    });	
-
-			});
-	</script>
+		
    	</head>
 	<body>
 	<section id="contecuerpo">		
@@ -106,4 +76,15 @@
 						<a href="#close" title="CERRAR">Cerrar</a>
 					</div>
 			</aside>
-				
+			<nav class="menu">
+		<ul class="menu">
+			<li><?=anchor('inicio','Inicio')?></li>
+			<li><?=anchor('inicio/nosotros','Nosotros')?></li>
+			<li><?=anchor('inicio/servicios','Servicios')?></li>
+			<li><?=anchor('inicio/temas','Temas y cursos')?></li>
+			<li><?=anchor('inicio/contacto','Contactos')?></li>
+			
+		</ul>
+		<a href="#" id="menuflotante">Menu</a>
+	</nav>
+	<section id="cuerpomenu">	

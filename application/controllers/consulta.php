@@ -26,7 +26,8 @@ class Consulta extends CI_Controller
 		function index()
 		{
 			
-			$is_logued_in = $this->session->userdata('is_logued_in');
+				//esto hay q hacer la prueba jajajaj
+				$is_logued_in = $this->session->userdata('is_logued_in');
 			if($is_logued_in != TRUE)
 			{
 				//echo $is_logued_in;
@@ -96,7 +97,7 @@ class Consulta extends CI_Controller
 			
 			if (($this->form_validation->run()) == FALSE)
 			{
-				redirect("inicio");
+				redirect("inicio/contacto_2");
 				//$this->registrar_tipi();
 				//echo "error";
 			}
@@ -165,12 +166,15 @@ class Consulta extends CI_Controller
 
 				if ( ! $this->email->send())
 				{
-				 echo "no se envio su consulta jajajaj";
+				 	
+				 	redirect("inicio/contacto_3");
 				}
 			        else { 
 							//
 					$insert = $this->consulta_model->registrar_consulta($email,$nombre,$comentario,$fecha);
-					Redirect("inicio");
+					
+					redirect("inicio/contacto_4");
+
 				
 				}	
 				
