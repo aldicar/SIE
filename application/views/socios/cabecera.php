@@ -27,8 +27,9 @@
 			
 	</script>
 	</head>
-	<section id="todo">		
+		
 		<body>
+		<section id="todo">	
 			<header>
 				
 				<div class="cabecraconteuno" id="contelogo">

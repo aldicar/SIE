@@ -5,6 +5,10 @@
 body{
   background:#FFFFEC;
 }
+#contecuerpo{
+  margin:0px auto;
+  max-width:1024px;
+}
 img{
   max-width:96%;
   width:auto 9;
@@ -177,10 +181,7 @@ h4{
     /*ketal asi no mas es */
 }
 /*contenedor articulos e imagenes de empresas*/
-#todo{
-	margin:0px auto;
-	max-width:1000px;
-}
+
 #salir{
   margin-left: 120px;
   margin-top: 0px;
