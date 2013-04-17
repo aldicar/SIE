@@ -67,15 +67,18 @@
 				</div>
 				
 				<div class="cabecraconte" id="iniciose">
+
 					  <label for="sesion" id="labeluno" class="inicioss">Inicio Sesión</label>
-						  <div class="errors"><?= $error ?></div>
+						 
 						 <?=form_open('usuarios/logued')?>
 						 <input id ="usuario" class="inicioss" name="usuario" type="usuario" placeholder="usuario" required />
 						 <input id ="password" class="inicioss" name="password" type=password placeholder="contraseña" required />
 						 
 						 <?= form_submit(array('name'=>'guardar', 'value'=>'Entrar', 'class'=>'buttonsend'))?>
 						 <?= form_close()?>
+
 				</div> 
+				 <div class="errors"><?= $error ?></div>
 								
 			</header> 
 

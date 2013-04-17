@@ -29,7 +29,7 @@
 	</head>
 		
 		<body>
-		<section id="todo">	
+		<section id="contecuerpo">	
 			<header>
 				
 				<div class="cabecraconteuno" id="contelogo">

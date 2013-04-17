@@ -167,6 +167,9 @@ h3#formcontac{
 .textoinput:first-child{
   margin-top: -100px;
 }
+input.letrafor{
+  color:black;
+}
 .button{
     cursor: pointer;
     background:-ms-linear-gradient(50% 100% 90deg,#232323, #9e9e9e);
