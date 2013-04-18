@@ -1,3 +1,5 @@
+<section id="cuerpomenu">
+<div id="tab1">
  <h3>MISIÓN</h3>
             <p>Es misión de S.I.E. Ofrecer soluciones tecnológicas innovadoras, 
             	de acuerdo a las necesidades específicas de cada cliente ofreciéndoles 
@@ -14,3 +16,5 @@
                	sólida, rentable y en permanente evolución. Y estar comprometidos con los problemas de nuestros clientes de forma 
                	transparentey eficaz para convertirnos en su socio de confianza. 
             </p>
+</div>
+</section>

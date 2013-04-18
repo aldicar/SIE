@@ -1,3 +1,5 @@
+<section id="cuerpomenu">
+<div id="tab2">
 <h3>OFRECEMOS LOS SERVICIOS DE:...</h3>
 			<p>Desarrollo Web, <br/>
 				Desarrollo Aplicaciones  Móviles, <br/>
@@ -9,3 +11,5 @@
 				Tecnología, Learning, <br/>
 				Redes, Soporte Técnico.
 			<p/>
+</div>
+</section>

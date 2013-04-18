@@ -1,5 +1,5 @@
 	<!--TODO ESTO ES EL MENU Y EL CUERPO-->
-	<nav class="menu">
+	<!--nav class="menu">
 		<ul class="menu">
 			<li><a href="#" title="tab0">Inicio</a></li>
 			<li><a href="#" title="tab1">Nosotros</a></li>
@@ -8,8 +8,9 @@
 			<li><a href="#" title="tab4">Contactos</a></li>
 		</ul>
 		<a href="#" id="menuflotante">Menu</a>
-	</nav>
-	<section id="cuerpomenu">
+	</nav-->
+		
+	<!--section id="cuerpomenu">
     	<div id="tab0">
     		<h5 class="bienvenida">BIENVENIDOS A SIE S.R.L.</h5>
     		<img class="imagenmenu"></img>
@@ -73,4 +74,4 @@
 				 				
  				<?= form_close()?>
     	</div>
-	</section>
+	</section-->

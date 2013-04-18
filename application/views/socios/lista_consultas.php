@@ -1,4 +1,4 @@
- 
+<div id="cuerposocio"> 
 <br> <br>	<h2 class = "letras"><center><?= $title ?></center></h2><br><br>
 
   	  <center><table class="tablas">
@@ -42,3 +42,4 @@
 				</tr>
 			<?endforeach?>
 			</table></center><br><br><br>
+</div>

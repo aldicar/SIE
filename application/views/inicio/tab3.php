@@ -1,3 +1,5 @@
+<section id="cuerpomenu">
+<div id="tab3">
 <h3>OFRECEMOS CURSOS DE:...</h3>
 			<p>Html5<br />
 			    Css3<br />
@@ -7,3 +9,5 @@
 			    Django<br />
 			    Python...
 			</p> 
+</div>
+</section>

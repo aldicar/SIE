@@ -1,3 +1,4 @@
+<div id="cuerposocio">
 <section id="contenedor">
 	<? foreach($filas as $fila):?>
 	<? $id = $fila->id_emp ?>
@@ -35,3 +36,4 @@
 				 				<?form_close()?>
 				 			  </div>	
 				 		    </div><BR>
+							</div>

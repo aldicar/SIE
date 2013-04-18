@@ -1,3 +1,4 @@
+<div id="cuerposocio">
 <br> <br>	<h2 class = "letras"><center><?= $title ?></center></h2><br>
 <div class = "letraslink"><?=anchor('empresas/new_empresa','NUEVA EMPRESA')?></div>
 <br>
@@ -28,3 +29,4 @@
 				</tr>
 			<?endforeach?>
 			</table></center><br><br><br>
+	</div>

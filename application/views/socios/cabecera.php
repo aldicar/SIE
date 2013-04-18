@@ -9,13 +9,20 @@
 		<link rel="stylesheet" href="<?=base_url()?>css/logousuario.css"/>
 		<link rel="stylesheet" href="<?=base_url()?>css/tablasusuarios.css"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<script scr="js/modernizr.custom.03036.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/modernizr.custom.03036.js"></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery-1.9.1.min.js"></script>
 		<script>
 		$(document).ready(function() {
-				var menu 		= $('nav ul');
+				var menuflotante 		= $('#menuflotante');
+					menu 		= $('nav ul');
 					menuHeight	= menu.height();
+
+				$(menuflotante).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
 
 				$(window).resize(function(){
 	        		var w = $(window).width();
@@ -24,7 +31,6 @@
 	        		}
 	    		});
 	    	});
-			
 	</script>
 	</head>
 		
@@ -85,10 +91,6 @@
 				   
 
 				</ul>
-			
-
-				<!--section class="cuerpo">
-
-				</section-->
+				<a href="#" id="menuflotante">Menu</a>
 			</nav>
 

@@ -1,4 +1,4 @@
-
+<div id="cuerposocio">
 <br><br>
 	<section id="formulario">
 		<h2 class = "letras"><center><?= $title ?></center></h2>
@@ -27,3 +27,4 @@
 		
 	</section>
 	<br><br><br><br>
+	</div>

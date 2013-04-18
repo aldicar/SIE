@@ -1,3 +1,4 @@
+<div id="cuerposocio">
 <br> <br>	<h2 class = "letras" ><center><?= $title ?></center></h2><br><div>
 				             
 
@@ -25,3 +26,4 @@
 				 				<?form_close()?>
 				 			  </div>	
 				 		    </div><BR>
+</div>

@@ -1,5 +1,8 @@
 
-<br> <br>	<h2 class = "letras"><center><?= $title ?></center></h2><br>
+	
+<div id="cuerposocio">
+<br> <br>
+<h2 class = "letras"><center><?= $title ?></center></h2><br>
 <div class="letraslink"><?=anchor('reuniones/new_reunion','NUEVA REUNION')?></div>
 <br>
   	  <center><table class="tablas">
@@ -28,4 +31,8 @@
 									
 				</tr>
 			<?endforeach?>
-			</table></center><br><br><br>
+			</table></center>
+			<br><br><br>
+			</div>
+			
+			</div>

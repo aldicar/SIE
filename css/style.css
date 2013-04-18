@@ -1,3 +1,10 @@
+#cuerposocio{
+	/*overflow:scroll;*/
+	margin:0 auto;
+    height:auto;
+	width:98%;
+	background:#535353;
+}
 .errors{
   width: 300px;
   height: 50px;
@@ -12,13 +19,15 @@
   margin:0 auto;
   margin-left: 700px;
 }
+.errors:active{
+	display:block;
+}
 *{
   padding:0;
-
 }
 
 body{
-  background:#FFFFEC;
+  background:#FFFFE0;
 }
 #contecuerpo{
   margin:0px auto;
@@ -31,8 +40,7 @@ img{
   display:block;
 }
 h2{
-  width:450px;
-  
+  width:450px; 
 }
 h4{
   height:2px;

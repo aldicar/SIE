@@ -1,8 +1,10 @@
+<section id="cuerpomenu">
+<div id="tab4">
 <h3 id="formcontac" >ENVIANOS TU CONSULTA</h3>
 <br>
 				<?php echo validation_errors('<div class="errors">','</div>'); ?> 
 
-				<div class="errors"><?= $error2 ?></div><br><br><br>
+				<div class="errors"><?= $error2 ?></div><br>
 			
 			    <?=form_open('consulta/registrar_consulta')?>
 						        
@@ -15,3 +17,5 @@
 				<input  class=" textoinput button" name="submit" type="submit"  value="Enviar" />
 				 				
  				<?= form_close()?>
+</div>
+</section>
