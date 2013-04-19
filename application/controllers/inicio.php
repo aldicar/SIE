@@ -101,8 +101,8 @@ class Inicio extends CI_Controller
 		function contacto_2()
 		{
 				$dato['title']= "Pagina de Inicio";	
-				$dato['error'] = "";
-				$dato['error2'] = "El el nombre o correo electronico es incorrecto....  ";
+				$dato['error'] = "El correo electronico es incorrecto...";
+				$dato['error2'] = "";
 			
 				$dato['filas'] = $this->empresas_model->selec_empresas();
 			//	$dato['consulta'] = $this->horario_model->selec_horario();	

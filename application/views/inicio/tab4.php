@@ -2,9 +2,9 @@
 <div id="tab4">
 <h3 id="formcontac" >ENVIANOS TU CONSULTA</h3>
 <br>
-				<?php echo validation_errors('<div class="errors">','</div>'); ?> 
+				<?php echo validation_errors('<div class="error">','</div>'); ?> 
 
-				<div class="errors"><?= $error2 ?></div><br>
+				<div class="errores"><?= $error ?></div><br>
 			
 			    <?=form_open('consulta/registrar_consulta')?>
 						        
