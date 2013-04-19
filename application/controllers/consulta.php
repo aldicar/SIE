@@ -174,7 +174,7 @@ class Consulta extends CI_Controller
 			        else { 
 							//
 					$insert = $this->consulta_model->registrar_consulta($email,$nombre,$comentario,$fecha);
-					
+					-
 					redirect("inicio/contacto_4");
 
 				
@@ -236,7 +236,7 @@ class Consulta extends CI_Controller
 		{
 			if($this->consulta_model->repondi_con($id_cons))
 			{
-				redirect('inicio');
+				redirect('socios');
 			}	
 			else
 			{	
