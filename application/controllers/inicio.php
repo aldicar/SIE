@@ -19,7 +19,7 @@ class Inicio extends CI_Controller
 				//echo $is_logued_in;
 				redirect('usuarios');
 			}	
-		}
+		} 
 		function index()
 		{
 			
@@ -31,13 +31,14 @@ class Inicio extends CI_Controller
 				
 				$dato['title']= "Pagina de Inicio";	
 				$dato['error'] = "";
+				
 			
 				$dato['filas'] = $this->empresas_model->selec_empresas();
 			//	$dato['consulta'] = $this->horario_model->selec_horario();	
 			
 				$this->load->view("inicio/cabecera",$dato);
 				//$this->load->view("inicio/$menu",$dato);
-				$this->load->view("inicio/tab0");
+				$this->load->view("inicio/tab0",$dato);
 				$this->load->view("inicio/pie",$dato);
 			
 			
@@ -101,8 +102,8 @@ class Inicio extends CI_Controller
 		function contacto_2()
 		{
 				$dato['title']= "Pagina de Inicio";	
-				$dato['error'] = "El correo electronico es incorrecto...";
-				$dato['error2'] = "";
+				$dato['error'] = "";
+				$dato['error2'] = "El correo electronico es incorrecto...";
 			
 				$dato['filas'] = $this->empresas_model->selec_empresas();
 			//	$dato['consulta'] = $this->horario_model->selec_horario();	

@@ -4,7 +4,7 @@
 <br>
 				<?php echo validation_errors('<div class="error">','</div>'); ?> 
 
-				<div class="errores"><?= $error ?></div><br>
+				<div class="errores"><?= $error2 ?></div><br><br>
 			
 			    <?=form_open('consulta/registrar_consulta')?>
 						        

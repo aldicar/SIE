@@ -29,7 +29,7 @@ class Consulta extends CI_Controller
 				//esto hay q hacer la prueba jajajaj
 				$is_logued_in = $this->session->userdata('is_logued_in');
 			if($is_logued_in != TRUE)
-			{
+			{ 
 				//echo $is_logued_in;
 				redirect('inicio');
 			}	
@@ -82,6 +82,8 @@ class Consulta extends CI_Controller
 			}
 
 		}
+
+
 		function registrar_consulta()
 		{
 
