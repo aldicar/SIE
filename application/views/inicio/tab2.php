@@ -1,8 +1,8 @@
 <section id="cuerpomenu">
-<div id="tab2">
+<div id="tab2" class="contenidotab">
 <h3>OFRECEMOS LOS SERVICIOS DE:...</h3>
 			<p>Desarrollo Web, <br/>
-				Desarrollo Aplicaciones  Móviles, <br/>
+				Desarrollo Aplicaciones<br/>  Móviles, <br/>
 				Tecnologías Microsoft, <br/>
 				Aplicaciones de la Nanotecnología, <br/>
 				Visión Artificial, <br/>

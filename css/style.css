@@ -1,7 +1,7 @@
 #cuerposocio{
-	/*overflow:scroll;*/
+	overflow:scroll;
 	margin:0 auto;
-    height:auto;
+  height:auto;
 	width:98%;
 	background:#535353;
 }

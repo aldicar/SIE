@@ -86,8 +86,8 @@ nav a#menuflotante {
 }
 #cuerpomenu
 {
-    background-color:#323232;
-    background-image:url(../images/);
+    background-color:#fff;
+    background-image:url(../images/img2.jpg);
     background-size:100% 100%;
     background-position:0px 0px;
     padding: 1em 4em 4em 4em;
@@ -97,7 +97,8 @@ nav a#menuflotante {
     position: relative;
     z-index: 2;
     border-radius:10px;
-	  box-shadow: 0 0 200px rgba(1,1,1,1) inset,0 0 150px black inset, 0 0 3px rgba(0, 0,0,1),0 0 10px rgba(255, 255,255,1);	    
+	 /* box-shadow: 0 0 200px rgba(1,1,1,1) inset,0 0 150px black inset, 0 0 3px rgba(0, 0,0,1),0 0 10px rgba(255, 255,255,1);*/
+   box-shadow: 0 0 10px black;	    
     margin: 0 auto;
     overflow: hidden;
     text-align:justify;
@@ -125,7 +126,12 @@ div h3{
 div p{
 	padding-left:25px;
 	padding-right:25px;
-	color: #DD6F00; 
+	color: black; 
+  font-weight: bolder;
+}
+div.contenidotab{
+  margin-left: 55%;
+  font-size: 120%;
 }
 #cuerpomenu div.image{
 	width: 50%;
@@ -147,37 +153,31 @@ h3#formcontac{
     margin-right: 25%;
     font-size:18px;
     
-    color:red;
+    color:white;
     border: 1px solid black;
     border-radius: 15px 15px;
     
 }
-.textoinput{
-
-    box-shadow: inset 0px 0px 2px 0 #000;
-    -ms-box-shadow: inset 0px 0px 2px 0 #000;
-    -moz-box-shadow: inset 0px 0px 2px 0 #000;
-    -o-box-shadow: inset 0px 0px 2px 0 #000;
-    -webkit-box-shadow: inset 0px 0px 2px 0 #000;
-    background:-ms-linear-gradient(0% 100% 90deg,#8A8A8A, #ACACAC);
-    background:-moz-linear-gradient(0% 100% 90deg,#8A8A8A, #ACACAC);
-    background:-o-linear-gradient(0% 100% 90deg,#8A8A8A, #ACACAC);
-    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#ACACAC), to(#8A8A8A));
+.buttons,.textoinput{
+    box-shadow: inset 0px 0px 5px #fff;
+    -ms-box-shadow: inset 0px 0px 5px #fff;
+    -moz-box-shadow: inset 0px 0px 5px #fff;
+    -o-box-shadow: inset 0px 0px 5px #fff;
+    -webkit-box-shadow: inset 0px 0px 5px #fff;
+    background:-ms-linear-gradient(0% 100% 90deg,#0070aa, #232323);
+    background:-moz-linear-gradient(0% 100% 90deg,#0070aa,#232323);
+    background:-o-linear-gradient(0% 100% 90deg,#0070aa, #232323);
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#232323), to(#0070aa));
 
 }
 .textoinput:first-child{
   margin-top: -100px;
 }/*todo mejor*/
 input.letrafor{
-  color:black;
+  color:white;
 }
-.button{
+.buttons{
     cursor: pointer;
-    background:-ms-linear-gradient(50% 100% 90deg,#232323, #9e9e9e);
-    background:-moz-linear-gradient(50% 100% 90deg,#232323, #9e9e9e);
-    background:-o-linear-gradient(50% 100% 90deg,#232323, #9e9e9e);
-    background:-webkit-gradient(linear, 0% 50%, 50% 100%, from(#9e9e9e), to(#232323));    
-   
     text-shadow: 1px 1px 0 #9d9d9d;
     transition: all 300ms ease 50ms;
     -webkit-transition: all 300ms ease 50ms;
@@ -186,23 +186,51 @@ input.letrafor{
     -ms-transition: all 300ms ease 50ms;
 	margin-top:-15px;
 }
-.button:hover{
+.buttons:hover{
     color:white;
-    box-shadow: 1px 1px 3px #949494 inset,0px 0px 5px white,0px 0px 2px #DD6F00;
+    box-shadow: 1px 1px 2px #949494 inset,0px 0px 20px white inset,0px 0px 20px black;
 }
 .imagenmenu{
-  width: 400px;
+  background: transparent;
+  border: 3px solid black;
+  width: 350px;
   height:250px;
-  background: url(../images/engranes.jpg)no-repeat;
-  background-size: 100% 100%;
-  background-position:0px 0px;
+  background: url(../images/sie.png)no-repeat;
+  background-size: 200% 200%;
+  background-position:-200px -200px;
+  margin-left:60%;
+  margin-right: 60%;
+  margin-top: -600px;
 }
 h5.bienvenida{
   margin-top: 10px;
   color: #00619C;
   font-size: 20px;
-  text-align: center;
+  text-align: right;
   text-shadow:0 0 50px white;
+}
+h5.venida{
+
+   padding-right: 22%;
+}
+h5.sie{
+ 
+  font-size: 250px;
+  font-family: 'AR DESTINE';
+  color:#D23633;
+  text-shadow:-3px -3px 5px skyblue, 3px 3px 5px #555;
+  margin-bottom: -10px;
+  margin-top: -70px;
+}
+h5.srl{
+  width: 100%;
+  margin-top: -70px;
+  font-size: 80px;
+  font-family: 'AR DESTINE';
+  margin-bottom:0px;
+}
+h5.trabajamos{
+ 
 }
 /*Styles for screen 768px*/
 @media screen and (max-width: 768px) {
@@ -243,6 +271,19 @@ h5.bienvenida{
   	.modal > div {
 	   width: 100%;
 	}
+  /*cabeceras sie*/
+  h5.sie{
+    font-size: 200px;
+    margin-bottom: -10px;
+    margin-top: -70px;
+  }
+  h5.srl{
+    margin-top: -50px;
+    font-size: 65px;
+  }
+  h5.venida{
+    padding-right: 18%;
+  }
   h3#formcontac{
     margin-bottom: -15px;
   }
@@ -296,6 +337,30 @@ h5.bienvenida{
   }
   h3#formcontac{
     margin-bottom: -10px;
+  }
+  /*cabeceras sie*/
+  h5.sie{
+    text-align: center;
+    font-size: 180px;
+    margin-bottom: -10px;
+    margin-top: -50px;
+  }
+  h5.srl{
+    text-align: center;
+    margin-top: -50px;
+    font-size: 55px;
+  }
+  h5.venida{
+    text-align:center;
+    padding-right: 0%;
+  }
+  h5.trabajamos{
+    text-align: center;
+  }
+  div.contenidotab{
+    margin-left: 0%;
+    font-size: 100%;
+    text-align: right;
   }
 .textoinput{
     width:80%;
