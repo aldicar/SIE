@@ -10,7 +10,7 @@ class Consulta extends CI_Controller
     		$this->load->helper(array('form', 'url'));
     		//$this->load->model('policia_model');
     		$this->load->model('consulta_model');
-			//$this->load->library('email');
+			$this->load->library('email');
 			$this->load->library('form_validation');
 			$this->load->helper('date'); 
     	}
@@ -83,7 +83,61 @@ class Consulta extends CI_Controller
 
 		}
 
+		function prueba_email()
+		{
+			$this->form_validation->set_rules('nombre', 'NOMBRE', 'required|trim|min_length[3]|strtoupper');
+			$this->form_validation->set_rules('email', 'EMAIL', 'required|trim|min_length[3]|valid_email');
+			$this->form_validation->set_rules('comentario', 'COMENTARIO', 'required|trim|min_length[3]');
+			
+		
+			$this->form_validation->set_message('required', 'Debe introducir el campo %s ...!!!!!');
+			$this->form_validation->set_message('valid_email', 'La direccion de correo es incorrecta ...!!!!!');
+			$this->form_validation->set_message('min_length', 'el %s tiene q tener 3 caracteres ...!!!!!');
+			
+			if (($this->form_validation->run()) == FALSE)
+			{
+				redirect("inicio/contacto_2");
+				//$this->registrar_tipi();
+				//echo "error";
+			}
+			else
+			{
+				$datestring = " %Y-%m-%d";
+				$time = time();
+				$fecha =  mdate($datestring, $time);
 
+				$ultimo = $this->consulta_model->ultimid();
+					$id_ult = $ultimo[0]->id_con; 
+					$id_ult = $id_ult + 1;
+
+				$nombre = $this->input->post ('nombre');
+				$email = $this->input->post ('email'); 
+				$comentario = $this->input->post ('comentario'); 
+
+				$contenido = "$comentario <br /> REPONDER -> http://siesrl.260mb.org/index.php/consulta/reponder_consulta_correo/$id_ult/1";
+				//$contenido = $comentario;	
+
+				
+
+
+				$this->email->from('idevelopersystem@live.com', 'S.I.E.');
+				$this->email->to('alvarod745@gmail.com');
+				$this->email->subject('prueba jejejej');
+				$this->email->message($contenido);
+				if ( ! $this->email->send())
+				{
+					echo "si se envio carajo jejeje";
+				}
+				else
+				{
+					echo "no se enviooooooooooooooooooooo una mierda jajajaj";
+				}
+				
+				
+			}
+
+		}
+		
 		function registrar_consulta()
 		{
 
@@ -110,42 +164,16 @@ class Consulta extends CI_Controller
 				$fecha =  mdate($datestring, $time);
 
 				$ultimo = $this->consulta_model->ultimid();
-					$id_ult = $ultimo[0]->id_con;
+					$id_ult = $ultimo[0]->id_con; 
 					$id_ult = $id_ult + 1;
 
 				$nombre = $this->input->post ('nombre');
 				$email = $this->input->post ('email'); 
 				$comentario = $this->input->post ('comentario');
 
-				$contenido = "$comentario <br /> REPONDER -> http://siesrl.260mb.org/index.php/consulta/reponder_consulta_correo/$id_ult/1";
+				$contenido = "$comentario  REPONDER -> http://siepotosi.tuars.com/index.php/consulta/respuesta_correo/$id_ult";
 				//$contenido = $comentario;	
 
-			/*		
-				$mail = new PHPMailer();
-			        $mail->IsSMTP(); // establecemos que utilizaremos SMTP
-			      	$mail->SMTPAuth   = true; // habilitamos la autenticación SMTP
-			        $mail->SMTPSecure = "ssl";  // establecemos el prefijo del protocolo seguro de comunicación con el servidor
-			        $mail->Host       = "smtp.gmail.com";      // establecemos GMail como nuestro servidor SMTP
-			        $mail->Port       = 465;                   // establecemos el puerto SMTP en el servidor de GMail
-			        $mail->Username   = "sieboliva@gmail.com";  // la cuenta de correo GMail
-			        $mail->Password   = "siebolivia2012";            // password de la cuenta GMail
-			        $mail->SetFrom('sieboliva@gmail.com', 'S.I.E. SRL');  //Quien envía el correo
-			        $mail->AddReplyTo("alvarod745@gmail.com","Nombre Apellido");  //A quien debe ir dirigida la respuesta
-			        $mail->Subject    = "NUEVA CONSULTA";  //Asunto del mensaje
-			        $mail->Body      = "$contenido	 ";
-			        $mail->AltBody    = "Cuerpo en texto plano";
-			       //$destino = ('roger.mendez.r@gmail.com, fr2percy@gmail.com,iverherlandth@gmail.com,alvarod745@gmail.com,rafa_rolando@hotmail.com');
-
-			        $destino = "alvarod745@gmail.com";
-			        $mail->AddAddress("roger.mendez.r@gmail.com");
-
-			      //  $mail->AddAttachment("images/phpmailer.gif");      // añadimos archivos adjuntos si es necesario
-			        //$mail->AddAttachment("images/phpmailer_mini.gif"); // tantos como queramos
-
-			        if(!$mail->Send()) {
-			        	echo "error no se envio ";
-			            //$data["message"] = "Error en el envío: " . $mail->ErrorInfo;
-			        } */
 
 				$config['protocol'] = 'smtp';
 				$config['smtp_host'] = 'smtp.googlemail.com';
@@ -158,12 +186,13 @@ class Consulta extends CI_Controller
 				$this->email->set_newline("\r\n");
 
 
-				$this->email->from($email);
-				//$this->email->to('alvarod745@gmail.com,roger.mendez.r@gmail.com, fr2percy@gmail.com,iverherlandth@gmail.com,rafa_rolando@hotmail.com');
-				$this->email->to('alvarod745@gmail.com');
+				$this->email->from($email, $nombre);
+				$this->email->to('alvarod745@gmail.com,roger.mendez.r@gmail.com, fr2percy@gmail.com,iverherlandth@gmail.com,rafa_rolando@hotmail.com');
+				//$this->email->to('alvarod745@gmail.com');
 				//$this->email->subject('Aquí está su información ');
 				$this->email->subject('NUEVA CONSULTA');
-				$this->email->message("$comentario  REPONDER -> http://localhost:8080/SIE/index.php/consulta/respuesta_correo/$id_ult");
+				//$this->email->message("$comentario  REPONDER -> http://localhost:8080/SIE/index.php/consulta/respuesta_correo/$id_ult");
+				$this->email->message($contenido);
 				$this->email->send();
 
 				if ( ! $this->email->send())

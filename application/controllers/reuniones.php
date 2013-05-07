@@ -99,9 +99,9 @@ class Reuniones extends CI_Controller
 
 				
 
-				$this->email->from('sieboliva@gmail.com');
-				//$this->email->to('alvarod745@gmail.com,roger.mendez.r@gmail.com, fr2percy@gmail.com,iverherlandth@gmail.com,rafa_rolando@hotmail.com');
-				$this->email->to('alvarod745@gmail.com');
+				$this->email->from('sieboliva@gmail.com', "S.I.E.");
+				$this->email->to('alvarod745@gmail.com,roger.mendez.r@gmail.com, fr2percy@gmail.com,iverherlandth@gmail.com,rafa_rolando@hotmail.com');
+				//$this->email->to('alvarod745@gmail.com');
 				//$this->email->subject('Aquí está su información ');
 				$this->email->subject($tipo);
 				//$this->email->message($lugar);

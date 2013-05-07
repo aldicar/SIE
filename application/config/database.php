@@ -66,13 +66,12 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
-
-
 /*
-$db['default']['hostname'] = 'sql210.260mb.org';
-$db['default']['username'] = 'mb260_12634368';
+$db['default']['hostname'] = 'mysql.tuars.com';
+$db['default']['username'] = 'u833276801_diego';
 $db['default']['password'] = '1982morito';
-$db['default']['database'] = 'mb260_12634368_sie';
+$db['default']['database'] = 'u833276801_sie';
+
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
