@@ -49,7 +49,7 @@ nav li {
     -ms-transition: all 300ms ease 50ms;
 }
 nav li:hover{
-  background-color:rgba(0,0,0,0.4);
+  background-color:rgba(0,0,0,0.2);
   border-radius: 0px;
   border-left: 0px solid black;
   border-right: 0px solid black;
@@ -59,15 +59,20 @@ nav li:hover{
   -o-box-sizing:border-box;
   -webkit-box-sizing:border-box;
 }
+
+nav li:first-child a {
+  color:yellow;
+}
 nav a {
 	color:white;
 	display: inline-block;
 	width: 100%;
 	text-align: center;
-	text-decoration: none;
+	text-decoration:none;
 	line-height: 40px;
 	text-shadow: 1px 1px 0px #283744;
 }
+
 nav li a {
 	border-right: 0px solid #576979;
 	box-sizing:border-box;
@@ -107,14 +112,14 @@ nav a#menuflotante {
   	-o-box-sizing:border-box;
   	-webkit-box-sizing:border-box;
 }
-#tab0,#tab1,#tab2,#tab3,#tab4{
+/*#tab0,#tab1,#tab2,#tab3,#tab4{
 	height:auto;
 	color:#DD6F00;
 	font-family: "trebuchet ms",sans-serif;
 	padding: 5px;
 	margin-top: -25px;
 
-}
+}*/
 div h3{
 	padding-left:15px; 
 	font-size: 20px;
@@ -143,10 +148,11 @@ div.contenidotab{
   margin-bottom: 0px;
 }
 h3#formcontac{
+  margin-top: -10px;
   margin-bottom: -15px;
   text-align: center;
 }
-.button,.textoinput{
+.textoinput{
     width:50%;
     padding: 5px;
     margin-left: 25%;
@@ -171,12 +177,13 @@ h3#formcontac{
 
 }
 .textoinput:first-child{
-  margin-top: -100px;
+  margin-top: -150px;
 }/*todo mejor*/
 input.letrafor{
   color:white;
 }
 .buttons{
+  width: 51.5%;
     cursor: pointer;
     text-shadow: 1px 1px 0 #9d9d9d;
     transition: all 300ms ease 50ms;
@@ -184,7 +191,8 @@ input.letrafor{
     -o-transition: all 300ms ease 50ms;
     -moz-transition: all 300ms ease 50ms;
     -ms-transition: all 300ms ease 50ms;
-	margin-top:-15px;
+	 margin-top:10px;
+
 }
 .buttons:hover{
     color:white;

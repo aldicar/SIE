@@ -43,11 +43,28 @@
 }
 
 body{
-  background:#FFFFE0;
+  
+  background:white;
+ 
+  /*background:white;*/
 }
 #contecuerpo{
   margin:0px auto;
   max-width:1024px;
+  /*box-shadow: 0 0 2000px black inset,0 0 8px white;
+  background:white;*/
+  border-left: 50px solid rgba(11,40,61,0.9);
+  border-right: 50px solid rgba(16,86,129,0.9);
+
+}
+#imageninicio{
+  background: url(../images/inicio1.png);
+  background-size: 100% 100%;
+  width: 450px;
+  height: 400px;
+  margin-top: 10px;
+  margin-right:-60px;
+
 }
 img{
   max-width:96%;
@@ -69,7 +86,7 @@ h4{
   background-size:100% 150% ;
   background-position:-800px 0px; 
   background-color: rgba(0,0,0,1);
-  box-shadow: 0 100px 230px rgba(255, 255,255,1),0 180px 290px rgba(255, 255,255,1);
+  box-shadow: 0 100px 230px rgba(255, 255,255,1),0 180px 290px rgba(255, 255,255,1), 0 0 5px white;
   color:white;
 	font-family: "trebuchet ms",sans-serif;
 	font-size:1.1em;
@@ -80,7 +97,7 @@ h4{
 	margin-top:10px;
   padding-top:10px;
 	border-radius:10px 10px 0 0 ;
-  width:100%;
+  width:99.8%;
   overflow: hidden;
   box-sizing:border-box;
   -moz-box-sizing:border-box;

@@ -38,24 +38,16 @@
 			<header>
 				
 				<div class="cabecraconteuno" id="contelogo">
-						<div id ="soluciones2">
-								<h3 class="nombres">Soluciones</br>
-								Inteligentes</br>Empresariales</h3>
-						</div>
-						<div id="logo1" class="logos"></div>
-						<div id="logo2" class="logos"></div>
-						<div id="logo3" class="logos"><p id="letralogo">SIE</p></div>
-						<div id="lema"><h4>Trabajando por un mejor futuro tecnológico</h4></div>
+
 					
 				</div>
-			
-				<div class="cabecraconte" id="mensaje">
+				<div id="mensaje">
 						<img class="imagenes" id="imagen1">
 						<img class="imagenes" id="imagen2">
 						<img class="imagenes" id="imagen3">
 				</div>
 				
-				<div class="cabecraconte" id="iniciose">
+				<!--div class="cabecraconte" id="iniciose">
 
 					  <label for="sesion" id="labeluno" class="inicioss">Inicio Sesión</label>
 						 
@@ -67,34 +59,14 @@
 						 <?= form_close()?>
 
 				</div> 
-				 <div class="errors"><?= $error ?></div>
+				 <div class="errors"><?= $error ?></div-->
 								
 			</header> 
 
 
-			<a  id="passwordmodal" title="Cambiar contraseña" href="#example2" >Olvidaste tu contraseña?</a>
+			<a  id="passwordmodal" title="Cambiar contraseña" href="#example2" >like</a>
 			
-			<aside id="example2" class="modal">
-					<div>
-						<h2 class="letrasmodal">Cambiar contraseña</h2>
-							<section id="flotante">
-								
-								<div class="errors"><?= $error2 ?></div>
-								<?php echo validation_errors('<div class="errors">','</div>'); ?>
-								 <?=form_open('usuarios/olvide_contra')?>
-									 <label class="labelmodal">Email : </label>
-							 		<input id ="usuariomodal" class="inicios inputmodal" name="usuariosas" type="usuario" placeholder="Ingrese su Direccion Email" required /><br>
-							 
-					 
-					               <?= form_submit(array('name'=>'enviar', 'value'=>'Enviar','class'=>'botonmodal'))?>
-					 
-					               <?= form_close()?>
-						
-								
-							</section>
-						<a href="#close" title="CERRAR">Cerrar</a>
-					</div>
-			</aside>
+			
 			<nav class="menu">
 				<ul class="menu">
 					<li><?=anchor('inicio','Inicio')?></li>

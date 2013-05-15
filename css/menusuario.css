@@ -7,8 +7,8 @@ li{
     display:inline-block;
     padding:5px;
     border:1px outset black;
-    /*color:white;
-    text-decoration: none;*/
+    /*color:white;*/
+    text-decoration: none;
     background:#79ACC4;
     width:15%;
     position:relative;
@@ -56,7 +56,7 @@ li{
 }
 #listas{
     color:white;
-    background: red;
+    background: black;
 }
 .cuerpo {
     background: url(../images/bg3.png);
